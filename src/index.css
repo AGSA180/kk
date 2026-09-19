@@ -1,0 +1,60 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+@import "tailwindcss";
+
+@layer base {
+  html {
+    font-family: 'Tajawal', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Hide scrollbar for clean tab headers */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Print Styles */
+@media print {
+  @page {
+    size: A4;
+    margin: 1.5cm;
+  }
+
+  body {
+    background: white !important;
+    color: black !important;
+    font-size: 11pt !important;
+  }
+
+  .print\:hidden {
+    display: none !important;
+  }
+
+  /* Printable headers and tables */
+  table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+  }
+
+  th, td {
+    border: 1px solid #cbd5e1 !important;
+    padding: 6px 8px !important;
+  }
+
+  th {
+    background-color: #f1f5f9 !important;
+    color: #0f172a !important;
+  }
+
+  /* Ensure cards look clean on paper */
+  .shadow-xl, .shadow-lg, .shadow-md, .shadow-sm, .shadow-2xl {
+    box-shadow: none !important;
+  }
+}

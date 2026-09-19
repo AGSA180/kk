@@ -1,0 +1,6 @@
+{
+  "name": "كم تصرف اليوم",
+  "description": "تطبيق لتحويل الميزانية الشهرية إلى قرار يومي ذكي وحساب الحد اليومي للمصروف",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
